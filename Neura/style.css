@@ -1,0 +1,231 @@
+.link,.company,.gap
+{
+    background-color: black;
+}
+
+
+
+.link a{
+    text-decoration:none;
+    color:white;
+    display: inline-block;
+    text-align: center;
+    position:relative;
+    min-width:60px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.link a:after
+{
+content: "";
+background-color: violet;
+width:0%;
+height:3px;
+transform:scaleX(0);
+transform-origin: bottom left;
+bottom:0px;
+left:0px;
+position:absolute;
+transition:width ease-in-out 0.50s;
+}
+
+.link a:hover
+{
+    color:white;
+}
+
+.link a:hover:after
+{
+    transform:scaleX(1);
+    width:100%;
+   
+}
+.navi
+{
+    position:fixed;
+}
+
+.company
+{
+    font-style:italic;
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.info-container
+{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-content:center;
+    justify-content:center;
+    position:relative;
+    margin: auto;
+    border: 1px solid black;
+    background-color: black;
+    opacity:0.8;
+    border-radius: 30px;
+}
+
+.information
+{
+    width:300px;
+    height:300px;
+    display: flex;
+    margin-top: 40px;
+    align-content:center;
+    justify-content:start;
+    flex-wrap: wrap;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    animation-name:infoani;
+    animation-duration:1.75s;
+    animation-iteration-count:1;
+}
+
+@keyframes infoani
+{
+    from{
+        width:0%;
+    }
+    to{
+        width:300px;
+
+    }
+}
+
+.Home
+{
+    background-image: url("./image/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about-header
+{
+    font-style: italic;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#00ff00;
+    text-shadow: 3px 3px 3px red;
+
+}
+
+.about-content
+{
+    font-style: italic;
+    font-size:20px;
+    font-weight: bold;
+    line-height: 40px;
+    color:dark;
+}
+
+.About
+{
+    background-image: linear-gradient(to right,#ffff00,#ff6600 ) ;
+    animation-name:aboutani;
+    animation-duration:0.75s;
+    animation-iteration-count:1;
+}
+
+@keyframes aboutani
+{
+    from
+    {
+        width:0%;
+    }
+    to
+    {
+        width:100%;
+    }
+}
+
+h5
+{
+    font-style: italic;
+}
+
+.Products
+{
+    background-image: url("./image/products/juanjo-jaramillo-mZnx9429i94-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    animation-name:productsani;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    
+
+}
+
+
+@keyframes productsani
+{
+    from
+    {
+        width:0%;
+    }
+    to
+    {
+        width:100%;
+    }
+}
+
+.bs-content
+{
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fix-nav
+{
+    position: fixed;
+    background-color: transparent;
+}
+
+.address{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-style: oblique;
+    color:white;
+    font-weight: bold;
+
+}
+
+.contact-header
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+}
+
+.Contact
+{
+    background-image: url("./image/contact/henning-witzel-ukvgqriuOgo-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.icons
+{
+    background-color: black;
+    color:white;
+}
+
+.Services
+{
+    
+    background-image: url("./image/service/mohammad-rahmani-8OnkIkFBBtM-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:white;
+    font-weight:bold;
+}
