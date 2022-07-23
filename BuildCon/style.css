@@ -1,0 +1,15 @@
+input[type="text"],input[type="email"],input[type="password"]
+{
+    padding:15px;
+    border:2px solid black;
+    border-radius:20px;
+    outline:none;
+}
+
+body
+{
+    background-image:url("./images/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+
+}
